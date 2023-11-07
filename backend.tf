@@ -1,6 +1,6 @@
 terraform {
   backend "gcs" {
-    bucket = "tf-sandbox-states-marius"
+    bucket = "apigee-repareo-tf-state"
     prefix = "apigee-setup"
   }
 }

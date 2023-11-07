@@ -1,12 +1,12 @@
-gcp_project_id          = "cw-marius-sandbox"
+gcp_project_id          = "apigee-repareo"
 gcp_target_region       = "europe-west3"
-apigee_org_name         = "apigee-demo-org"
+apigee_org_name         = "apigee-repareo"
 
 apigee_analytics_region = "europe-west1"
 apigee_environments = [{
   name       = "dev"
   cidr_range = "10.0.0.0/24"
-  hostnames  = ["marius.apigee.trygoo.gl"]
+  hostnames  = ["staging.api.repareo.de"]
 }]
 support_ranges = {
   "dev" = {
