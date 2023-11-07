@@ -3,7 +3,8 @@ resource "google_project_service" "gcp_apis" {
     "apigee.googleapis.com",
     "servicenetworking.googleapis.com",
     "compute.googleapis.com",
-    "cloudkms.googleapis.com"
+    "cloudkms.googleapis.com",
+    "cloudresourcemanager.googleapis.com"
   ])
   
   project = var.gcp_project_id
