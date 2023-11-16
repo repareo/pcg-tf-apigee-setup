@@ -15,7 +15,7 @@ resource "google_apigee_instance" "apigee_instance" {
   location             = var.gcp_target_region
   org_id               = google_apigee_organization.apigee_org.id
   consumer_accept_list = [var.gcp_project_id]
-  ip_range             = "${each.value.cidr_range}/22,${var.support_ranges[each.key].support_range}"
+  ip_range             = "${each.value.cidr_range}/22,${var.support_ranges[local.apigee_envs[each.key].support_range].support_range}"
 
 }
 

@@ -22,6 +22,7 @@ variable "apigee_environments" {
     cidr_range = string
     hostnames = list(string)
     env_type = optional(string, "COMPREHENSIVE")
+    support_range = string
   }))
 }
 

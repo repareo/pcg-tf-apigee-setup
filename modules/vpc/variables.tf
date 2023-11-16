@@ -16,6 +16,7 @@ variable "apigee_environments" {
     name = string
     cidr_range = string
     hostnames = list(string)
+    support_range = string
   }))
 }
 
