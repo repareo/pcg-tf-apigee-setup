@@ -23,16 +23,11 @@ variable "apigee_environments" {
     hostnames = list(string)
     env_type = optional(string, "COMPREHENSIVE")
     support_range = string
+    region = string
   }))
 }
 
 variable "apigee_cmek_runtimedb" {
   type = bool
   default = false
-}
-
-variable "support_ranges" {
-  type = map(object({
-    support_range = string
-  }))
 }

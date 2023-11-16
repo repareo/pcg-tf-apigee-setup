@@ -8,7 +8,7 @@ resource "google_compute_subnetwork" "apigee_subnetwork" {
 
   for_each      = local.apigee_envs
   name          = "${each.value.name}-apigee-subnet"
-  region        = var.gcp_target_region
+  region        = each.value.region
   ip_cidr_range = each.value.cidr_range
   network       = google_compute_network.apigee_network.id
 }

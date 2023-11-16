@@ -33,7 +33,6 @@ No resources.
 | <a name="input_apigee_org_name"></a> [apigee\_org\_name](#input\_apigee\_org\_name) | n/a | `string` | n/a | yes |
 | <a name="input_gcp_project_id"></a> [gcp\_project\_id](#input\_gcp\_project\_id) | n/a | `string` | n/a | yes |
 | <a name="input_gcp_target_region"></a> [gcp\_target\_region](#input\_gcp\_target\_region) | n/a | `string` | `"europe-west3"` | no |
-| <a name="input_support_ranges"></a> [support\_ranges](#input\_support\_ranges) | n/a | <pre>map(object({<br>    support_range = string<br>  }))</pre> | n/a | yes |
 
 ## Outputs
 

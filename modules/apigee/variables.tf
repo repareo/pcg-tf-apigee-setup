@@ -23,6 +23,7 @@ variable "apigee_environments" {
     hostnames = list(string)
     env_type = optional(string, "COMPREHENSIVE")
     support_range = string
+    region = string
   }))
 }
 
@@ -49,11 +50,5 @@ variable "apigee_peering_ranges" {
   type = map(object({
     name = string
     cidr_range = string
-  }))
-}
-
-variable "support_ranges" {
-  type = map(object({
-    support_range = string
   }))
 }
