@@ -9,7 +9,7 @@ resource "google_compute_region_network_endpoint_group" "apigee_neg" {
   subnetwork            = google_compute_subnetwork.apigee_subnetwork[each.key].id
   network_endpoint_type = "PRIVATE_SERVICE_CONNECT"
   psc_target_service    = each.value
-  region                = var.gcp_target_region
+  region                = local.apigee_envs[each.key].region
 }
 
 resource "google_compute_global_address" "apigee_external_ip" {
