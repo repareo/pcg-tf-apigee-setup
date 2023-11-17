@@ -59,5 +59,33 @@ apigee_environments = [
     hostnames  = ["staging-8.api.repareo.de"]
     support_range = "192.168.0.112/28"
     region = "europe-west8"
+  },
+  {
+    name       = "dev-9"
+    cidr_range = "10.8.0.0/22"
+    hostnames  = ["staging-9.api.repareo.de"]
+    support_range = "192.168.0.128/28"
+    region = "europe-west9"
+  },
+  {
+    name       = "dev-11"
+    cidr_range = "10.10.0.0/22"
+    hostnames  = ["staging-11.api.repareo.de"]
+    support_range = "192.168.0.160/28"
+    region = "europe-west12"
+  },
+  {
+    name       = "dev-12"
+    cidr_range = "10.11.0.0/22"
+    hostnames  = ["staging-12.api.repareo.de"]
+    support_range = "192.168.0.176/28"
+    region = "us-west1"
+  },
+  {
+    name       = "dev-13"
+    cidr_range = "10.12.0.0/22"
+    hostnames  = ["staging-13.api.repareo.de"]
+    support_range = "192.168.0.192/28"
+    region = "us-west2"
   }
 ]
